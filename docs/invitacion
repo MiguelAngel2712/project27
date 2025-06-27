@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Invitación a la inauguración de la chocolatería artesanal ‘Dulce Decadencia’ en Hotel Chocolat, Londres." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <title>Inauguración Chocolatería Artesanal | Dulce Decadencia</title>
+  <!-- Enlazamos el CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <div class="invite-card" role="region" aria-label="Invitación a la inauguración de Chocolatería Artesanal Dulce Decadencia">
+      <div class="content">
+        <header>
+          <h1>Inauguración Chocolatería Artesanal</h1>
+          <h2>Dulce Decadencia</h2>
+        </header>
+        <time datetime="2025-07-15T17:00">📅 15 de julio de 2025, 17:00</time>
+        <p>📍 <strong>Hotel Chocolat</strong>, 58-59 Sloane Avenue, Londres</p>
+        <p>Te invitamos a una experiencia sensorial: catas premium, recorrido guiado y obsequios exclusivos.</p>
+        <form action="/rsvp" method="POST">
+          <button type="submit" class="rsvp-button" aria-label="Confirmar asistencia al evento">
+            Confirmar Asistencia
+          </button>
+        </form>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cacao_Fruit_with_Beans.JPG/800px-Cacao_Fruit_with_Beans.JPG"
+        alt="Fruto del cacao con granos"
+        class="shop-image"
+      />
+    </div>
+  </main>
+  <footer>&copy; 2025 Dulce Decadencia. Todos los derechos reservados.</footer>
+</body>
+</html>
