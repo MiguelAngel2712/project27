@@ -1,0 +1,106 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: #f3ece2;
+  color: #3e2c2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+main {
+  width: 100%;
+  max-width: 720px;
+}
+
+.invite-card {
+  position: relative;
+  background: #3e2c2a;
+  border: 5px solid #d4af37;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.invite-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cocoa_Beans.jpg/1200px-Cocoa_Beans.jpg') center/cover no-repeat;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  background: rgba(243,236,226,0.95);
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  margin-bottom: .5rem;
+  color: #3e2c2a;
+  letter-spacing: 3px;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+  color: #d4af37;
+  font-style: italic;
+}
+
+.content time {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.rsvp-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #f3ece2;
+  background: #3e2c2a;
+  border: 3px solid #d4af37;
+  border-radius: 10px;
+  padding: .9rem 2.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background: #d4af37;
+  color: #3e2c2a;
+}
+
+.shop-image {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 160px;
+  border: 5px solid #f3ece2;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+footer {
+  margin-top: 2.5rem;
+  font-size: .85rem;
+  color: #6b5954;
+  text-align: center;
+  font-style: italic;
+}
